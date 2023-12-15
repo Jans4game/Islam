@@ -19,18 +19,79 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+html{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 #header{
     background-image: url(./img/nouman-younas-TM4522xcNRs-unsplash.jpg);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    color: white;
 }
 
-@media (max-width: 800px) {
+#topbar{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0, 0.6);
+    text-align: center;
+    font-size: larger;
+    padding: 1em;
+}
+
+#firstcontent{
+    display: flex;
+    height: 70vh;
+    background-color: rgb(0, 0, 0, 0.4);
+    flex-direction: column;
+    text-align: center;
+}
+
+#home{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#topics{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#scienceIslam{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#whatisislam{
+    font-size: 4rem;
+    align-items: center;
+}
+
+/* For mobile devices */
+
+@media (max-width: 1300px) {
+    #whatisislam{
+        font-size: 3rem;
+    }   
+}
+
+@media (max-width: 600px) {
     #header{
-        background-size: 300% 100% ;
+    }
+
+    #whatisislam{
+        font-size: 2rem;
     }
 }
 
+
+
+/* For mobile devices */
