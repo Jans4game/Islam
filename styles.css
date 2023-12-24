@@ -126,7 +126,7 @@ html{
     
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
     #whatisislam{
         font-size: 3rem;
     }   
@@ -155,7 +155,7 @@ html{
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
     @media (min-height: 1500px) {
         #whatisislam{
             font-size: 2rem;
