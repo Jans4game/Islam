@@ -35,18 +35,18 @@ html{
 #topbar{
     display: flex;
     flex-direction: row;
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgb(0, 0, 0);
     text-align: center;
     font-size: larger;
-    padding: 1em;
+    height: 5%;
 }
 
 #firstcontent{
-    display: flex;
-    height: 70vh;
+    height: 80%;
     background-color: rgb(0, 0, 0, 0.4);
-    flex-direction: column;
     text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 
 #home{
@@ -75,23 +75,120 @@ html{
     align-items: center;
 }
 
+#firstpic{
+    position: relative;
+    background-image: url(./img/firstpic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    flex: 1;
+    margin-right: -15%;
+}
+
+#secpic{
+    background-image: url(./img/ter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* #firstpic{
+    position: relative;
+    background-image: url(./img/john-lee-oMneOBYhJxY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+    flex: 1;
+    margin-right: -100%;
+}
+
+#secpic{
+    background-image: url(./img/michael-held-Of-NXuECJbE-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
+} */
+
+
 /* For mobile devices */
 
 @media (max-width: 1300px) {
     #whatisislam{
         font-size: 3rem;
     }   
+    
+    
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
+    #whatisislam{
+        font-size: 3rem;
+    }   
+
+    #firstcontent{
+        height: 85%;
+    }
+    
+    #firstpic{
+        position: relative;
+        background-image: url(./img/firstcroped.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex: 1;   
+    }
+
+    #secpic{
+        background-image: url(./img/seccropped.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex: 1;
+    }
+}
+
+@media (max-width: 550px) {
     #header{
     }
 
     #whatisislam{
         font-size: 2rem;
     }
+
+    #firstcontent{
+        flex-direction: column;
+        height: 85%;
+    }
+
+    #firstpic{
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+        margin-right: 0%;
+        margin-bottom: -26%;
+    }
+
+    #secpic{
+        clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    }
 }
 
+@media (max-width: 400px) {
+    #firstpic{
+        margin-bottom: -30%;
+    }
+
+}
+
+@media (max-width: 350px) {
+    #firstpic{
+        margin-bottom: -40%;
+    }
+}
 
 
 /* For mobile devices */
