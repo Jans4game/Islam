@@ -151,8 +151,23 @@ html{
         background-position: center;
         flex: 1;
     }
-    
+}
 
+@media(max-width: 1100px) {
+    #firstcontent{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #firstpic{
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+        margin-right: 0%;
+        margin-bottom: -26%;
+    }
+
+    #secpic{
+        clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    }
 }
 
 @media (max-width: 1500px) {
