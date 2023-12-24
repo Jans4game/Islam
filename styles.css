@@ -307,7 +307,7 @@ html{
     }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 1050px) {
     @media (max-height: 1300px) {
         #firstpic{
             margin-bottom: -20%;
@@ -316,12 +316,26 @@ html{
     
     @media (max-height: 2000px) {
         #firstpic{
-            margin-bottom: -35%;
+            margin-bottom: -30%;
         }
     }
     
 }
 
+@media (max-width: 900px) {
+    @media (max-height: 1300px) {
+        #firstpic{
+            margin-bottom: -20%;
+        }
+    }
+    
+    @media (max-height: 2000px) {
+        #firstpic{
+            margin-bottom: -40%;
+        }
+    }
+    
+}
 
 
 /* For mobile devices */
