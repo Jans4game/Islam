@@ -191,6 +191,25 @@ html{
 }
 }
 
+@media (min-height: 3000px) {
+    @media (max-width:2100px) {
+        #firstcontent{
+            flex-direction: column;
+            height: 85%;
+        }
+    
+        #firstpic{
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+            margin-right: 0%;
+            margin-bottom: -26%;
+        }
+    
+        #secpic{
+            clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+}
+
 @media (min-height: 1700px) {
     @media (max-width:2400px) {
         #firstpic{
