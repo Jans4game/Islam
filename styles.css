@@ -42,7 +42,8 @@ html{
 }
 
 #firstcontent{
-    height: 95%;
+    position: relative;
+    height: 80%;
     background-color: rgb(0, 0, 0, 0.4);
     text-align: center;
     display: flex;
@@ -70,12 +71,10 @@ html{
     cursor: pointer;
 }
 
-#whatisislam{
-    font-size: 4rem;
-    align-items: center;
-}
 
 #firstpic{
+    display: flex;
+    justify-content: flex-end;
     position: relative;
     background-image: url(./img/firstpic.png);
     background-size: cover;
@@ -87,12 +86,69 @@ html{
 }
 
 #secpic{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
     background-image: url(./img/ter.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     flex: 1;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+#firster{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#con1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: calc(1em + 2vw);
+    font-weight: bold;
+    color: black;
+    flex: 1;
+    padding-right: calc(1em + 2vw); 
+    padding-top: calc(1em + 1vh);
+}
+
+#seconder{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-items: center;
+}
+
+#con2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: calc(1em + 2vw);
+    font-weight: bold;
+    flex: 1;
+    padding-right: calc(1em + 2vw); 
+    padding-bottom: calc(1em + 1vh);
+    color: white;
+}
+
+#or{
+    position: absolute;
+    display: flex;
+    font-size: calc(3em + 2vw);
+    left: 46.5%;
+    top: 43%;
+}
+
+#o{
+    color: white;
+    font-weight: bold;
+}
+
+#r{
+    color: white;
+    font-weight: bold;
 }
 
 /* #firstpic{
@@ -119,20 +175,12 @@ html{
 /* For mobile devices */
 
 @media (max-width: 1300px) {
-    #whatisislam{
-        font-size: 3rem;
-    }   
-    
     
 }
 
 @media (max-width: 1600px) {
-    #whatisislam{
-        font-size: 3rem;
-    }   
-
     #firstcontent{
-        height: 95%;
+        height: 80%;
     }
     
     #firstpic{
@@ -151,6 +199,16 @@ html{
         background-position: center;
         flex: 1;
     }
+
+    #con1{
+        font-size: calc(1em + 1vw);
+        padding-right: 3em;
+    }
+
+    #con2{
+        font-size: calc(1em + 1vw);
+        padding-right: 3em;
+    } 
 }
 
 @media(max-width: 1100px) {
@@ -171,11 +229,7 @@ html{
 }
 
 @media (max-width: 1500px) {
-    @media (min-height: 1500px) {
-        #whatisislam{
-            font-size: 2rem;
-        }
-    
+    @media (min-height: 1500px) {    
         #firstcontent{
             flex-direction: column;
             height: 95%;
@@ -269,13 +323,6 @@ html{
 }
 
 @media (max-width: 550px) {
-    #header{
-    }
-
-    #whatisislam{
-        font-size: 2rem;
-    }
-
     #firstcontent{
         flex-direction: column;
         height: 95%;
@@ -298,7 +345,6 @@ html{
     #firstpic{
         margin-bottom: -30%;
     }
-
 }
 
 @media (max-width: 350px) {
@@ -319,7 +365,7 @@ html{
             margin-bottom: -30%;
         }
     }
-    
+
 }
 
 @media (max-width: 900px) {
@@ -334,8 +380,147 @@ html{
             margin-bottom: -35%;
         }
     }
-    
 }
 
+@media (min-width:1100px) {
+    #or{
+        left: 45%;
+    }
+}
+
+@media (min-width: 1400px) {
+    #or{
+        left: 45.5%;
+    }
+    @media (min-height: 800px) {
+        #or{
+            left: 46.5%;
+        }
+    }
+}
+
+@media (min-height: 1000px) {
+    @media (min-width: 3000px) {
+        #or{
+            left: 47.5%;
+        }
+    }
+}
+
+@media screen and (orientation: landscape) {
+    #firstcontent {
+        flex-direction: row;
+    }
+
+    #firstpic{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        background-image: url(./img/firstpic.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+        flex: 1;
+        margin-right: -15%;
+        margin-bottom: 0%;
+    }
+    
+    #secpic{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: relative;
+        background-image: url(./img/ter.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+        flex: 1;
+
+    }
+}
+
+/* @media (max-width:3700px) {
+    @media (max-height:1900px) {
+        #con1{
+            font-size: 4.5rem;
+        }
+
+        #con2{
+            font-size: 4.5rem;
+        }
+    }
+}
+
+@media (max-width:2800px) {
+    @media (max-height:1900px) {
+        #con1{
+            font-size: 4.3rem;
+        }
+
+        #con2{
+            font-size: 4.3rem;
+        }
+    }
+} */
+
+/* 1080p start */
+
+/* @media (max-width:1920px) {
+    @media (max-height:1080px) {
+        #con1{
+            font-size: 3rem;
+        }
+
+        #con2{
+            font-size: 3rem;
+        }
+    }
+} */
+
+/* 1080p end */
+
+/* 720p start */
+
+/* @media (max-width:1280px) {
+    @media (max-height:720px) {
+        #con1{
+            font-size: 2rem;
+        }
+
+        #con2{
+            font-size: 2rem;
+        }
+    }
+} */
+
+
+/* 720p end */
+
+/* @media (max-width:2900px) {
+    @media (max-height:1900px) {
+        #con1{
+            font-size: 4.5rem;
+        }
+
+        #con2{
+            font-size: 4.5rem;
+        }
+    }
+}
+
+@media (max-width:2600px) {
+    @media (max-height:1700px) {
+        #con1{
+            font-size: 4.2rem;
+        }
+
+        #con2{
+            font-size: 4.2rem;
+        }
+    }
+}
+ */
 
 /* For mobile devices */
