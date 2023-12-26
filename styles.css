@@ -102,7 +102,6 @@ html{
     position: relative;
     display: flex;
     flex-direction: row;
-    height: 200px;
     align-items: center;
     justify-content: center;
 }
@@ -113,15 +112,13 @@ html{
     font-weight: bold;
     color: black;
     flex: 1;
-    padding-right: calc(1em + 2vw); 
-    padding-top: calc(1em + 1vh);
+    padding-right: calc(1em + 10vw); 
 }
 
 #seconder{
     display: flex;
     position: relative;
     flex-direction: row;
-    height: 200px;
     align-items: center;
 }
 
@@ -131,7 +128,6 @@ html{
     font-weight: bold;
     flex: 1;
     padding-right: calc(1em + 2vw); 
-    padding-bottom: calc(1em + 1vh);
     color: white;
 }
 
@@ -626,25 +622,48 @@ html{
     }
 
     #con1 {
-        font-size: calc(1em + 1vw);
+        font-size: calc(1rem + 1.7vw);
         padding-right: 0;
         padding-bottom: 0;
-        padding-right: calc(1em + 2.5vw); 
+        padding-right: calc(1rem + 4vw); 
+        padding-top: calc(1rem + 10vh);
     }
 
     #con2 {
-        font-size: calc(1em + 1vw);
+        font-size: calc(1rem + 1.7vw);
         padding-right: 0;
-        padding-bottom: 0;
-        padding-right: calc(1em + 2vw); 
+        padding-bottom: calc(1rem + 10vh);
+        padding-right: calc(1rem + 3vw); 
     }
 
     #or {
-        font-size: calc(1em + 3vh);
+        font-size: calc(1rem + 3vh);
         left: 48%;
     }
 
+    @media (max-width: 1000px) {
+        @media (max-height: 1000px) {
+            #con1{
+                width: 300px;
+            }
 
+            #con2 {
+                width: 300px;
+            }
+        }
+    }
+
+    @media (max-width: 1300px) {
+        @media (max-height: 750px) {
+            #con1{
+                width: 350px;
+            }
+
+            #con2 {
+                width: 350px;
+            }
+        }
+    }
 }
 
 /* @media (max-width:3700px) {
