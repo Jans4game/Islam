@@ -704,7 +704,7 @@ html{
 
 @media screen and (orientation: portrait) {
     #content1 {
-        height: calc(1em + 35vh);
+        height: calc(1em + 55vw);
     }
 
     #intro {
@@ -733,7 +733,6 @@ html{
     #judgingpic {  
         flex: 1.6;
         width: 80%;
-        margin-top: 5%;
         background-image: url(./img/wesley-tingey-9z9fxr_7Z-k-unsplash.jpg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
