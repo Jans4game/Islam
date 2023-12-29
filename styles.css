@@ -20,11 +20,12 @@ time, mark, audio, video {
 }
 
 html{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #header{
-    background-image: url(./img/nouman-younas-TM4522xcNRs-unsplash.jpg);
+    /* background-image: url(./img/nouman-younas-TM4522xcNRs-unsplash.jpg); */
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -329,54 +330,6 @@ html{
         } 
     }
 }
-/* @media (max-width: 1500px) {
-    @media (min-height: 600px) {    
-        #firstcontent{
-            flex-direction: column;
-            height: 95%;
-        }
-    
-        #firstpic{
-            clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-            margin-right: 0%;
-            margin-bottom: -26%;
-        }
-    
-        #secpic{
-            clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
-        }
-
-        #con1 {
-            font-size: calc(1em + 2vh);
-            padding-right: 0;
-        }
-
-        #con2 {
-            font-size: calc(1em + 2vh);
-            padding-right: 0;
-        }
-
-        #firstpic{
-            justify-content: center;
-            flex-direction: row;
-            align-items: center;
-        }
-    
-        #secpic{
-            justify-content: center;
-            flex-direction: row;
-            align-items: center;
-        }
-
-        #firster{
-            bottom: calc(1em + 1vh);
-        }
-    
-        #seconder{
-            top: calc(1em + 3vh);
-        }
-    }
-} */
 
 @media (min-height: 3000px) {
     @media (max-width:2100px) {
@@ -559,41 +512,17 @@ html{
     }
 }
 
-/* @media (min-width:1100px) {
-    #or{
-        left: 45%;
-    }
-}
-
-@media (min-width: 1400px) {
-    #or{
-        left: 45.5%;
-    }
-    @media (min-height: 800px) {
-        #or{
-            left: 46.5%;
-        }
-    }
-}
-
-@media (min-height: 1000px) {
-    @media (min-width: 3000px) {
-        #or{
-            left: 47.5%;
-        }
-    }
-} */
-
 @media screen and (orientation: landscape) {
     #firstcontent {
         flex-direction: row;
+        height: 95%;
     }
 
     #firstpic{
         display: flex;
         justify-content: flex-end;
         position: relative;
-        background-image: url(./img/firstpic.png);
+        background-image: url(./img/Untitled\ design\ \(4\).png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -625,12 +554,12 @@ html{
         font-size: calc(1rem + 1.7vw);
         padding-right: 0;
         padding-bottom: 0;
-        padding-right: calc(1rem + 4vw); 
+        padding-right: calc(1rem + 3vw); 
         padding-top: calc(1rem + 10vh);
     }
 
     #con2 {
-        font-size: calc(1rem + 1.7vw);
+        font-size: calc(1rem + 1.5vw);
         padding-right: 0;
         padding-bottom: calc(1rem + 10vh);
         padding-right: calc(1rem + 3vw); 
@@ -644,109 +573,41 @@ html{
     @media (max-width: 1000px) {
         @media (max-height: 1000px) {
             #con1{
-                width: 300px;
+                width: 350px;
             }
 
             #con2 {
-                width: 300px;
+                width: 350px;
+                padding-right: calc(1rem + 3vw); 
             }
         }
     }
 
-    @media (max-width: 1300px) {
+    @media (max-width: 1500px) {
         @media (max-height: 750px) {
             #con1{
-                width: 350px;
+                width: 400px;
             }
 
             #con2 {
-                width: 350px;
+                width: 400px;
+                padding-right: calc(1rem + 2vw); 
             }
         }
     }
+
+    @media (max-width: 1700px) {
+
+            #con1{
+                width: 400px;
+            }
+
+            #con2 {
+                width: 400px;
+                padding-right: calc(1rem + 3vw); 
+            }
+        }
 }
-
-/* @media (max-width:3700px) {
-    @media (max-height:1900px) {
-        #con1{
-            font-size: 4.5rem;
-        }
-
-        #con2{
-            font-size: 4.5rem;
-        }
-    }
-}
-
-@media (max-width:2800px) {
-    @media (max-height:1900px) {
-        #con1{
-            font-size: 4.3rem;
-        }
-
-        #con2{
-            font-size: 4.3rem;
-        }
-    }
-} */
-
-/* 1080p start */
-
-/* @media (max-width:1920px) {
-    @media (max-height:1080px) {
-        #con1{
-            font-size: 3rem;
-        }
-
-        #con2{
-            font-size: 3rem;
-        }
-    }
-} */
-
-/* 1080p end */
-
-/* 720p start */
-
-/* @media (max-width:1280px) {
-    @media (max-height:720px) {
-        #con1{
-            font-size: 2rem;
-        }
-
-        #con2{
-            font-size: 2rem;
-        }
-    }
-} */
-
-
-/* 720p end */
-
-/* @media (max-width:2900px) {
-    @media (max-height:1900px) {
-        #con1{
-            font-size: 4.5rem;
-        }
-
-        #con2{
-            font-size: 4.5rem;
-        }
-    }
-}
-
-@media (max-width:2600px) {
-    @media (max-height:1700px) {
-        #con1{
-            font-size: 4.2rem;
-        }
-
-        #con2{
-            font-size: 4.2rem;
-        }
-    }
-}
- */
 
 /* For mobile devices */
 
@@ -769,3 +630,114 @@ html{
     flex: 1;
     clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
 } */
+
+/* content 1 */
+
+#content1 {
+    height: 50vh;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+
+@media screen and (orientation: landscape) {
+    #intro {
+        height: calc(1em + 7vh);
+        width: 80%;
+    }
+
+    #introcontent {
+        font-size: calc(1em + 2vh);
+        font-family: Helvetica;
+        flex: 1;
+    }
+
+    #starter { 
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 51, 51);
+        color: white
+    }
+
+    #judgingpic {  
+        flex: 0.9;
+        height: 80%;
+        margin: 10%;
+        margin-left: 8%;
+        margin-right: 3%;
+        background-image: url(./img/wesley-tingey-9z9fxr_7Z-k-unsplash.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    #judgingcontent {
+        font-size: calc(1em + 1.5vh);
+        font-family: Helvetica;
+        padding: 5%;
+        padding-left: 0%;
+        flex: 1.1;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #content1 {
+        height: 40vh;
+    }
+
+    #intro {
+        height: calc(1em + 8vh);
+        width: 70%;
+    }
+
+    #introcontent {
+        font-size: calc(1em + 0.5vw);
+        font-family: Helvetica;
+        flex: 1;
+    }
+
+    #starter { 
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 51, 51);
+        color: white
+    }
+
+    #judgingpic {  
+        flex: 1.6;
+        width: 80%;
+        margin-top: 5%;
+        background-image: url(./img/wesley-tingey-9z9fxr_7Z-k-unsplash.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    #judgingcontent {
+        font-size: calc(1em + 0.5vw);
+        font-family: Helvetica;
+        flex: 0.4;
+        padding: 10%;
+    }
+}
+
