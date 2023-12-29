@@ -656,7 +656,7 @@ html{
 
 @media screen and (orientation: landscape) {
     #content1 {
-        height: calc(1em + 50vh);
+        height: calc(1em + 60vh);
     }
     #intro {
         height: calc(1em + 7vh);
@@ -675,10 +675,10 @@ html{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        /* background-color: rgb(51, 51, 51);
-        color: white; */
-        background-color: white;
-        color: black;
+        background-color: rgb(51, 51, 51);
+        color: white;
+        /* background-color: white;
+        color: black; */
     }
 
     #judgingpic {  
@@ -724,15 +724,16 @@ html{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* background-color: rgb(51, 51, 51);
-        color: white; */
-        background-color: white;
-        color: black;
+        background-color: rgb(51, 51, 51);
+        color: white;
+        /* background-color: white;
+        color: black; */
     }
 
     #judgingpic {  
         flex: 1.6;
         width: 80%;
+        margin-top: 12%;
         background-image: url(./img/wesley-tingey-9z9fxr_7Z-k-unsplash.jpg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
