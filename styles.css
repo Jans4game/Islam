@@ -656,11 +656,10 @@ html{
 
 @media screen and (orientation: landscape) {
     #content1 {
-        height: calc(1em + 50vh);
+        height: 50vh;
         background-color: rgb(51, 51, 51);
     }
     #intro {
-        height: calc(1em + 7vh);
         width: 80%;
     }
 
@@ -800,12 +799,11 @@ html{
 
 @media screen and (orientation: portrait) {
     #content1 {
-        height: calc(1em + 55vw);
+        height: 35vh;
         background-color: rgb(51, 51, 51);
     }
 
     #intro {
-        height: calc(1em + 8vh);
         width: 80%;
     }
 
