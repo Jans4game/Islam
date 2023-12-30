@@ -656,7 +656,8 @@ html{
 
 @media screen and (orientation: landscape) {
     #content1 {
-        height: calc(1em + 60vh);
+        height: calc(1em + 50vh);
+        background-color: rgb(51, 51, 51);
     }
     #intro {
         height: calc(1em + 7vh);
@@ -667,27 +668,28 @@ html{
         font-size: calc(1em + 2vh);
         font-family: Helvetica;
         flex: 1;
+        color: white;
     }
 
     #starter { 
-        height: 100vh;
+        height: 80vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: rgb(51, 51, 51);
-        color: white;
-        /* background-color: white;
-        color: black; */
+        /* background-color: rgb(51, 51, 51);
+        color: white; */
+        background-color: white;
+        color: black;
     }
 
     #judgingpic {  
-        flex: 0.9;
+        flex: 0.65;
         height: 80%;
         margin: 10%;
-        margin-left: 8%;
-        margin-right: 3%;
-        background-image: url(./img/wesley-tingey-9z9fxr_7Z-k-unsplash.jpg);
+        margin-left: 10%;
+        margin-right: 7%;
+        background-image: url(./img/pexels-dominika-roseclay-4289079.jpg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -698,13 +700,108 @@ html{
         font-family: Helvetica;
         padding: 5%;
         padding-left: 0%;
-        flex: 1.1;
+        flex: 1.35;
     }
+
+    #content3 {
+        height: 100vh;
+        background-image: url(./img/milada-vigerova-XuWYokuezfc-unsplash\ \(1\).jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+
+    #authornoteimage {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.5);
+    }
+
+    #authornote{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #note {
+        position: relative;
+        opacity: 1;
+        flex: 0.7;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: calc(1em + 7vh);
+        font-weight: bolder;
+    }
+
+    #notecontent {
+        position: relative;
+        flex: 1;
+        text-align: center;
+        font-size: calc(1em + 1.5vh);
+        color: white;
+    }
+
+    #allocator1 {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    #authornotecontent1 {
+        width: 60%;
+        margin: 1em;
+        padding: 1em;
+        font-size: calc(1em + 1.5vh);
+        background-color: rgb(255, 255, 255, 0);
+        font-family: Helvetica;  
+        position: relative;
+        color: white;
+        flex: 0.7;
+        border: 5px solid teal
+    }
+
+    #dummy1 {
+        flex: 0.3;
+    }
+
+    #allocator2 {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #dummy2 {
+        flex: 0.3;
+    }
+
+    #authornotecontent2 {
+        flex: 0.7;
+        margin: 1em;
+        padding: 1em;
+        background-color: rgb(255, 255, 255, 0);
+        font-size: calc(1em + 1.5vh);
+        font-family: Helvetica;  
+        position: relative;
+        color: white;
+        border: 5px solid teal;
+    }
+
+    #endnote {
+        flex: 0.4;
+    }
+    
 }
 
 @media screen and (orientation: portrait) {
     #content1 {
         height: calc(1em + 55vw);
+        background-color: rgb(51, 51, 51);
     }
 
     #intro {
@@ -716,6 +813,7 @@ html{
         font-size: calc(1em + 0.5vw);
         font-family: Helvetica;
         flex: 1;
+        color: white;
     }
 
     #starter { 
@@ -724,17 +822,17 @@ html{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rgb(51, 51, 51);
-        color: white;
-        /* background-color: white;
-        color: black; */
+        /* background-color: rgb(51, 51, 51);
+        color: white; */
+        background-color: white;
+        color: black;
     }
 
     #judgingpic {  
-        flex: 1.6;
+        flex: 1.7;
         width: 80%;
         margin-top: 12%;
-        background-image: url(./img/wesley-tingey-9z9fxr_7Z-k-unsplash.jpg);
+        background-image: url(./img/pexels-dominika-roseclay-4289079.jpg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -743,8 +841,101 @@ html{
     #judgingcontent {
         font-size: calc(1em + 0.5vw);
         font-family: Helvetica;
-        flex: 0.4;
+        flex: 0.3;
         padding: 10%;
+    }
+
+    #content3 {
+        height: 40vh;
+        background-image: url(./img/milada-vigerova-XuWYokuezfc-unsplash\ \(1\).jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+
+    #authornoteimage {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.5);
+    }
+
+    #authornote{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #note {
+        position: relative;
+        opacity: 1;
+        flex: 1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: calc(1em + 1.5vh);
+        font-weight: bolder;
+    }
+
+    #notecontent {
+        position: relative;
+        flex: 1;
+        text-align: center;
+        font-size: calc(1em + 1.5vh);
+        color: white;
+    }
+
+    #allocator1 {
+        width: 100%;
+        flex: 0.8;
+        display: flex;
+        align-items: center;
+    }
+
+    #authornotecontent1 {
+        width: 60%;
+        margin: 1em;
+        padding: 1em;
+        font-size: calc(0.3em + 1vw);
+        background-color: rgb(255, 255, 255, 0);
+        font-family: Helvetica;  
+        position: relative;
+        color: white;
+        flex: 0.7;
+        border: 2px solid teal
+    }
+
+    #dummy1 {
+        flex: 0.3;
+    }
+
+    #allocator2 {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #dummy2 {
+        flex: 0.3;
+    }
+
+    #authornotecontent2 {
+        flex: 0.7;
+        margin: 1em;
+        padding: 1em;
+        background-color: rgb(255, 255, 255, 0);
+        font-size: calc(0.3em + 1vw);
+        font-family: Helvetica;  
+        position: relative;
+        color: white;
+        border: 2px solid teal;
+    }
+
+    #endnote {
+        flex: 0.4;
     }
 }
 
