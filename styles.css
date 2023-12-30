@@ -694,8 +694,8 @@ html{
     #exploringpic {  
         width: 70%;
         flex: 1;
-        margin: 10%;
-        margin-right: 7%;
+        margin: 9%;
+        margin-right: 8%;
         background-image: url(./img/pexels-dominika-roseclay-4289079.jpg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -735,7 +735,7 @@ html{
     #note {
         position: relative;
         opacity: 1;
-        flex: 0.7;
+        flex: 1;
         width: 100%;
         display: flex;
         align-items: center;
@@ -799,8 +799,20 @@ html{
         border: 5px solid teal;
     }
 
+    #end {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0.8;
+    }
+
     #endnote {
-        flex: 0.4;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        flex: 1;
+        font-size: calc(1em + 1.5vh);
+        color: white;
     }
     
 }
@@ -878,7 +890,7 @@ html{
     #note {
         position: relative;
         opacity: 1;
-        flex: 1;
+        flex: 1.2;
         width: 100%;
         display: flex;
         align-items: center;
@@ -942,8 +954,20 @@ html{
         border: 2px solid teal;
     }
 
+    #end {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+
     #endnote {
-        flex: 0.4;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        flex: 1;
+        font-size: calc(0.6em + 1vw);
+        color: white;
     }
 }
 
