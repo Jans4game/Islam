@@ -846,7 +846,7 @@ html{
     }
 
     #content3 {
-        height: 40vh;
+        height: 50vh;
         background-image: url(./img/milada-vigerova-XuWYokuezfc-unsplash\ \(1\).jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -897,17 +897,17 @@ html{
         width: 60%;
         margin: 1em;
         padding: 1em;
-        font-size: calc(0.3em + 1vw);
+        font-size: calc(0.5em + 1vw);
         background-color: rgb(255, 255, 255, 0);
         font-family: Helvetica;  
         position: relative;
         color: white;
-        flex: 0.7;
+        flex: 0.8;
         border: 2px solid teal
     }
 
     #dummy1 {
-        flex: 0.3;
+        flex: 0.2;
     }
 
     #allocator2 {
@@ -919,15 +919,15 @@ html{
     }
 
     #dummy2 {
-        flex: 0.3;
+        flex: 0.2;
     }
 
     #authornotecontent2 {
-        flex: 0.7;
+        flex: 0.8;
         margin: 1em;
         padding: 1em;
         background-color: rgb(255, 255, 255, 0);
-        font-size: calc(0.3em + 1vw);
+        font-size: calc(0.5em + 1vw);
         font-family: Helvetica;  
         position: relative;
         color: white;
