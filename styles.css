@@ -26,7 +26,6 @@ html{
 
 
 #topbar{
-    position: sticky;
     top: 0%;
     display: flex;
     flex-direction: row;
@@ -34,7 +33,28 @@ html{
     text-align: center;
     font-size: larger;
     height: 3em;
-    z-index: 1;
+    /* z-index: 1; */
+}
+
+#home{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#topics{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#scienceIslam{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
 }
 
 #header{
@@ -58,26 +78,7 @@ html{
     flex-direction: row;
 }
 
-#home{
-    background-color: transparent;
-    color: white;
-    border-color: transparent;
-    cursor: pointer;
-}
 
-#topics{
-    background-color: transparent;
-    color: white;
-    border-color: transparent;
-    cursor: pointer;
-}
-
-#scienceIslam{
-    background-color: transparent;
-    color: white;
-    border-color: transparent;
-    cursor: pointer;
-}
 
 
 #firstpic{
@@ -555,6 +556,7 @@ html{
 
     #firstpic{
         align-items: flex-start;
+        justify-content: flex-end;
     }
 
     #con1 {
@@ -585,6 +587,7 @@ html{
 
             #con2 {
                 width: 350px;
+                font-size: calc(1em + 0.9em);
                 padding-right: calc(1rem + 3vw); 
             }
         }
@@ -593,6 +596,7 @@ html{
     @media (max-width: 1500px) {
         @media (max-height: 750px) {
             #con1{
+                padding-right: calc(1rem + 2vw); 
                 width: 400px;
             }
 
@@ -606,12 +610,15 @@ html{
     @media (max-width: 1700px) {
 
             #con1{
-                width: 400px;
+                font-size: calc(1rem + 0.7vw);
+                padding-right: calc(1em + 0.7vw); 
+                width: calc(1em + 35vw);
             }
 
             #con2 {
-                width: 400px;
-                padding-right: calc(1rem + 3vw); 
+                width: calc(1em + 35vw);
+                font-size: calc(1rem + 0.7vw);
+                padding-right: calc(1rem + 1vw); 
             }
         }
 }
@@ -766,10 +773,9 @@ html{
     }
 
     #authornotecontent1 {
-        width: 60%;
         margin: 1em;
         padding: 1em;
-        font-size: calc(1em + 1.5vh);
+        font-size: calc(0.9em + 1vh);
         background-color: rgb(255, 255, 255, 0);
         font-family: Helvetica;  
         position: relative;
@@ -799,7 +805,7 @@ html{
         margin: 1em;
         padding: 1em;
         background-color: rgb(255, 255, 255, 0);
-        font-size: calc(1em + 1.5vh);
+        font-size: calc(0.9em + 1vh);
         font-family: Helvetica;  
         position: relative;
         color: white;
@@ -809,7 +815,6 @@ html{
     #end {
         display: flex;
         justify-content: center;
-        align-items: center;
         flex: 0.8;
     }
 
@@ -820,6 +825,27 @@ html{
         flex: 1;
         font-size: calc(1em + 1.5vh);
         color: white;
+    }
+
+    @media (max-width: 800px) {
+        @media (max-height: 450px) {
+            #notecontent {
+                font-size: calc(0.7em + 1vw);
+                flex: 1;
+            }
+
+            #authornotecontent1 {
+                font-size: calc(0.7em + 1vh);
+            }
+
+            #authornotecontent2 {
+                font-size: calc(0.7em + 1vh);
+            }
+
+            #endnote {
+                font-size: calc(0.7em + 1vw);
+            }
+        }
     }
     
 }
